@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Boostrap Scrollspy</title>
+    <style>
+        .section
+        {
+            height: 300px;
+            width:300px;
+            overflow: auto;
+        }
+    </style>
+    
+   
+</head>
+<body>
+    <div class="container d-flex m align-items-center flex-column ">
+    <nav id="scroll-1" class="navbar navbar-light bg-light px-3">
+    <ul class="nav nav-pills" >
+        <li class="nav-item"><a class="nav-link" href="#one">One</a></li>
+        <li  class="nav-item"><a  class="nav-link" href="#two">Two</a></li>
+        <li  class="nav-item"><a  class="nav-link" href="#three">Three</a></li>
+        <li  class="nav-item"><a class="nav-link" href="#four">Four</a></li>
+    </ul>
+    </nav>
+   
+    <div data-bs-spy="scroll" data-bs-target="#scroll-1" data-bs-offset="0" class="section" tabindex="0">
+        <h4 id="one">One</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, in quam reprehenderit necessitatibus voluptatem doloremque modi provident quasi, hic fugit dolor pariatur vitae sint et? Libero suscipit nemo iusto?
+        Explicabo odit distinctio mollitia reiciendis aperiam? Non deserunt consequuntur magnam repellat blanditiis consequatur ad? Modi voluptatem numquam eius? Laudantium asperiores, voluptatibus perspiciatis nihil dolorem ab illo suscipit saepe aut ipsa.
+        Error voluptates facilis culpa delectus accusantium perspiciatis vel quibusdam ipsa? Dolorum similique omnis blanditiis culpa, quasi provident assumenda pariatur labore officia quibusdam magnam dolor error quisquam quod officiis iste esse.
+        Voluptatibus tenetur repellendus at debitis ab esse officia, odit laboriosam dolorem eum inventore illo ut quisquam, minus quaerat ipsa! Voluptatem corporis omnis incidunt? Eum ad repudiandae dignissimos doloremque. Repellat, officiis.
+        Repellat aperiam, possimus nemo animi vitae deleniti doloribus incidunt nobis aut, numquam deserunt libero cupiditate voluptate optio repudiandae id illum soluta! Recusandae tempora suscipit aliquam voluptates quasi. Praesentium, beatae sequi.</p>
+        <h4 id="two">Two</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, in quam reprehenderit necessitatibus voluptatem doloremque modi provident quasi, hic fugit dolor pariatur vitae sint et? Libero suscipit nemo iusto?
+        Explicabo odit distinctio mollitia reiciendis aperiam? Non deserunt consequuntur magnam repellat blanditiis consequatur ad? Modi voluptatem numquam eius? Laudantium asperiores, voluptatibus perspiciatis nihil dolorem ab illo suscipit saepe aut ipsa.
+        Error voluptates facilis culpa delectus accusantium perspiciatis vel quibusdam ipsa? Dolorum similique omnis blanditiis culpa, quasi provident assumenda pariatur labore officia quibusdam magnam dolor error quisquam quod officiis iste esse.
+        Voluptatibus tenetur repellendus at debitis ab esse officia, odit laboriosam dolorem eum inventore illo ut quisquam, minus quaerat ipsa! Voluptatem corporis omnis incidunt? Eum ad repudiandae dignissimos doloremque. Repellat, officiis.
+        Repellat aperiam, possimus nemo animi vitae deleniti doloribus incidunt nobis aut, numquam deserunt libero cupiditate voluptate optio repudiandae id illum soluta! Recusandae tempora suscipit aliquam voluptates quasi. Praesentium, beatae sequi.</p>
+        <h4 id="three">Three</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, in quam reprehenderit necessitatibus voluptatem doloremque modi provident quasi, hic fugit dolor pariatur vitae sint et? Libero suscipit nemo iusto?
+        Explicabo odit distinctio mollitia reiciendis aperiam? Non deserunt consequuntur magnam repellat blanditiis consequatur ad? Modi voluptatem numquam eius? Laudantium asperiores, voluptatibus perspiciatis nihil dolorem ab illo suscipit saepe aut ipsa.
+        Error voluptates facilis culpa delectus accusantium perspiciatis vel quibusdam ipsa? Dolorum similique omnis blanditiis culpa, quasi provident assumenda pariatur labore officia quibusdam magnam dolor error quisquam quod officiis iste esse.
+        Voluptatibus tenetur repellendus at debitis ab esse officia, odit laboriosam dolorem eum inventore illo ut quisquam, minus quaerat ipsa! Voluptatem corporis omnis incidunt? Eum ad repudiandae dignissimos doloremque. Repellat, officiis.
+        Repellat aperiam, possimus nemo animi vitae deleniti doloribus incidunt nobis aut, numquam deserunt libero cupiditate voluptate optio repudiandae id illum soluta! Recusandae tempora suscipit aliquam voluptates quasi. Praesentium, beatae sequi.</p>
+        <h4 id="four">Four</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, in quam reprehenderit necessitatibus voluptatem doloremque modi provident quasi, hic fugit dolor pariatur vitae sint et? Libero suscipit nemo iusto?
+        Explicabo odit distinctio mollitia reiciendis aperiam? Non deserunt consequuntur magnam repellat blanditiis consequatur ad? Modi voluptatem numquam eius? Laudantium asperiores, voluptatibus perspiciatis nihil dolorem ab illo suscipit saepe aut ipsa.
+        Error voluptates facilis culpa delectus accusantium perspiciatis vel quibusdam ipsa? Dolorum similique omnis blanditiis culpa, quasi provident assumenda pariatur labore officia quibusdam magnam dolor error quisquam quod officiis iste esse.
+        Voluptatibus tenetur repellendus at debitis ab esse officia, odit laboriosam dolorem eum inventore illo ut quisquam, minus quaerat ipsa! Voluptatem corporis omnis incidunt? Eum ad repudiandae dignissimos doloremque. Repellat, officiis.
+        Repellat aperiam, possimus nemo animi vitae deleniti doloribus incidunt nobis aut, numquam deserunt libero cupiditate voluptate optio repudiandae id illum soluta! Recusandae tempora suscipit aliquam voluptates quasi. Praesentium, beatae sequi.</p>
+     </div>
+    </nav>
+</div>
+
+</body>
+</html>
