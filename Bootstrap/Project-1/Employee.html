@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Employee List  page</title>
+  </head>
+  <body style="background-color:gainsboro;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jobotral</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./Employee.html">Employee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control form-control-sm" type="search" placeholder="Search..." aria-label="Search">
+              <button class="btn btn-outline-success btn-sm btn-success text-white" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Description-->
+      <div class="container-fluid">
+          <div class="row mt-3">
+              <div class="col-lg-3 col-md-3 mb-3">
+                  <div class="list-group list-group-flush">
+                      <div class="list-group-item active">Employee List</div>
+                      <a href="#" class="list-group-item text-primary" data-bs-toggle="modal" data-bs-target="#Add_Employee">Add Employee</a>
+                      <a href="./Employee.html" class="list-group-item text-primary">View All</a>
+                  </div>
+
+              </div>
+              <div class="col-lg-9 col-md-9 ">
+                  <table class="table table-hover table-striped">
+                      <tr class="table-dark">
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Email ID</th>
+                      <th>Details</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aryan</td>
+                        <td>aryan.garg_cs18@gla.ac.in</td>
+                        <td><a href="#" class="btn btn-sm btn-info"  data-bs-toggle="modal" data-bs-target="#View_Employee1">Details</a></td>
+                        <td><a   href="#" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#edit_Employee1">Edit</a></td>
+                        <th><a  href="#" class="btn btn-sm btn-danger" onclick="confirm(`Do you want to delete Aryan Garg?`)">Delete</a></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aryan</td>
+                        <td>aryan.garg_cs18@gla.ac.in</td>
+                        <td><a href="#" class="btn btn-sm btn-info">Details</a></td>
+                        <td><a   href="#" class="btn btn-sm btn-warning  ">Edit</a></td>
+                        <th><a  href="#" class="btn btn-sm btn-danger">Delete</a></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aryan</td>
+                        <td>aryan.garg_cs18@gla.ac.in</td>
+                        <td><a href="#" class="btn btn-sm btn-info">Details</a></td>
+                        <td><a   href="#" class="btn btn-sm btn-warning  ">Edit</a></td>
+                        <th><a  href="#" class="btn btn-sm btn-danger">Delete</a></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aryan</td>
+                        <td>aryan.garg_cs18@gla.ac.in</td>
+                        <td><a href="#" class="btn btn-sm btn-info">Details</a></td>
+                        <td><a   href="#" class="btn btn-sm btn-warning  ">Edit</a></td>
+                        <th><a  href="#" class="btn btn-sm btn-danger">Delete</a></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aryan</td>
+                        <td>aryan.garg_cs18@gla.ac.in</td>
+                        <td><a href="#" class="btn btn-sm btn-info">Details</a></td>
+                        <td><a   href="#" class="btn btn-sm btn-warning  ">Edit</a></td>
+                        <th><a  href="#" class="btn btn-sm btn-danger">Delete</a></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aryan</td>
+                        <td>aryan.garg_cs18@gla.ac.in</td>
+                        <td><a href="#" class="btn btn-sm btn-info">Details</a></td>
+                        <td><a   href="#" class="btn btn-sm btn-warning  ">Edit</a></td>
+                        <th><a  href="#" class="btn btn-sm btn-danger">Delete</a></th>
+                    </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <!-- Add Employee Details Model-->
+       <div class="modal fade" id="Add_Employee" tabindex="-1" aria-labelledby="Add_Employee" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Employee  Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form >
+                <div class="mb-3">
+                    <input type="date"  class="form-control form-control-sm">
+                </div>
+                  <div class="mb-3">
+                      <input type="text" placeholder="Employee Name" class="form-control form-control-sm">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" placeholder="Employee Id" class="form-control form-control-sm">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Employee ph no" class="form-control form-control-sm">
+                </div>
+                <div class="mb-3">
+                    <select name="Region" id="" class="form-control form-control-sm">
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="Android Developer">Android Developer</option>
+                        <option value="Data scientest">Data scientest</option>
+                        <option value="Product Manager">Product Manager</option>
+                    </select>
+                </div>
+                <div class="d-grid">
+                <input type="submit" class="btn btn-sm btn-success" value="Add new Employee">
+            </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--End  Add Employee Model-->
+
+      <!-- View Details Employee Model-->
+      <div class="modal fade" id="View_Employee1" tabindex="-1" aria-labelledby="view_Employee1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table border">
+                    <tr>
+                        <th>Id</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td>Aryan Garg</td>
+                    </tr>
+                    <tr>
+                        <th>Phone no</th>
+                        <td>+91 9557269704</td>
+                    </tr>
+                    <tr>
+                        <th>Job Details</th>
+                        <td>Web Developer</td>
+                    </tr>
+                    <tr>
+                        <th>Joining Details</th>
+                        <td>1 August 2020</td>
+                    </tr>
+
+
+                </table>
+              
+
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--   End Details Employee Model-->
+       <!-- Edit Employee Details Model-->
+       <div class="modal fade" id="edit_Employee1" tabindex="-1" aria-labelledby="edit_Employee1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Employee Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form >
+                <div class="mb-3">
+                    <input type="text"  class="form-control form-control-sm" value="01-08-2020">
+                </div>
+                  <div class="mb-3">
+                      <input type="text" value="Aryan Garg" class="form-control form-control-sm">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" value="1" class="form-control form-control-sm">
+                </div>
+                <div class="mb-3">
+                    <input type="text" value="+91 9557269704" class="form-control form-control-sm">
+                </div>
+                <div class="mb-3">
+                    <input type="text" value="Web Developer" class="form-control form-control-sm">
+                </div>
+                <div class="d-grid">
+                <input type="submit" class="btn btn-sm btn-success" value="Edit Employee">
+            </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--End Edit Employee Model-->
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+    
+  </body>
+</html>
