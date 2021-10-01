@@ -1,5 +1,6 @@
 //Pattern of LIS
 //Minimum number of deletions to make a sorted sequence 
+
 class Solution
 {
      public static int lis(int []nums,int curr, int pre, int n, int[][] dp)
