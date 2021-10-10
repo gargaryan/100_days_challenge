@@ -1,13 +1,12 @@
 /*
-A motorsports car race is held from source A to destination B. There are 'N' number of halts en route A to B. The racer can skip a halt or at a halt. Each time he stops or skips a it costs him some amount of time, as per the array (a[i]), 0<i<=N-1. The task here is to find the minimum amount of time it takes for the racer to reach the destination based off
+A motorsports car race is held from source A to destination B. There are 'N' number of halts en route A to B. 
+The racer can skip a halt or at a halt. Each time he stops or skips a it costs him some amount of time, as per the array (a[i]), 0<i<=N-1.
+The task here is to find the minimum amount of time it takes for the racer to reach the destination based of the following conditions: 
+• The racer can skip a maximum of two consecutive halts.
 
-the following conditions: • The racer can skip a maximum of two consecutive halts.
-
-• Each time a racer stops at a halt i, him time equal to a[i]. 5982 the r racer skips a halt i, it16 1 i, it costs
-
-osts him time given Y. to Minimum(a[i], Y), for •The racer cannot skip the first and the last
-
-halts.
+• Each time a racer stops at a halt i,  it costs him time equal to a[i]. 
+.  if the racer skips a halt i, it costs him time given to Minimum(a[i], Y), for given Y  
+•The racer cannot skip the first and the last halts.
 
 Input:
 
